@@ -9,7 +9,7 @@
     "export": "next export",
     "lint": "next lint",
     "predeploy": "next build && next export -o build",
-    "deploy": "gh-pages -d build"
+    "deploy": "next build && git add build/ && git commit -m \"Deploy\" && git subtree push --prefix build origin gh-pages"
   },
   "dependencies": {
     "next": "13.0.6",
