@@ -5,14 +5,6 @@ const nextConfig = {
   images: { unoptimized: true },
   assetPrefix: ".",
   basePath: "",
-  exportPathMap: async function (
-    defaultPathMap,
-    { dev, dir, outDir, distDir, buildId }
-  ) {
-    return {
-      "/": { page: "/" },
-    };
-  },
 };
 
 module.exports = nextConfig;
